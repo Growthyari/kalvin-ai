@@ -1,5 +1,5 @@
 import "../styles/partnerceo.css";
-import PartnerCard from "../components/PartnerCard";
+import PartnerCard from "../components/partnercard";
 
 function PartnerCEO({ onBack }) {
   return (

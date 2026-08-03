@@ -38,7 +38,7 @@ return(
 <FaRobot/>
 
 <h2>
-Kalvin AI
+Klaiv AI
 </h2>
 
 </div>
@@ -146,7 +146,7 @@ AK
 <div>
 
 <strong>
-Avinash
+Guest
 </strong>
 
 <p>
@@ -181,7 +181,7 @@ Free Plan
 ●
 </span>
 
-Kalvin AI
+Klaiv AI
 
 <select>
 
@@ -230,7 +230,7 @@ Share
 <div className="welcome">
 
 <h1>
-How can Kalvin AI help today?
+How can Klaiv AI help today?
 </h1>
 
 
@@ -255,7 +255,7 @@ design and creativity.
 
 
 <strong>
-Kalvin AI
+Klaiv AI
 </strong>
 
 </div>
@@ -263,8 +263,9 @@ Kalvin AI
 
 
 <p>
-Hello Avinash 👋  
-I am Kalvin AI. I can help you with coding,
+Hello! 👋
+Welcome to Klaiv AI. 
+I am Klaiv AI. I can help you with coding,
 UI design, documents, research and productivity.
 </p>
 
@@ -325,7 +326,7 @@ Create a modern React AI assistant interface.
 
 
 <strong>
-Kalvin AI
+Klaiv AI
 </strong>
 
 
@@ -395,7 +396,7 @@ file support and smart assistant features.
 
 <input
 type="text"
-placeholder="Ask Kalvin AI anything..."
+placeholder="Ask Klaiv AI anything..."
 />
 
 

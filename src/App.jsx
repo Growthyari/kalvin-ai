@@ -1,4 +1,6 @@
 import "./App.css";
+import { useState } from "react";
+import PartnerCEO from "./pages/partnerceo";
 
 import {
   FaRobot,
@@ -16,13 +18,22 @@ import {
   FaThumbsDown,
   FaCopy,
   FaRedo,
+  FaUsers,
   FaShare,
   FaEllipsisH
 } from "react-icons/fa";
 
 
 function App(){
+const [showPartnerPage, setShowPartnerPage] = useState(false);
 
+if (showPartnerPage) {
+  return (
+    <div style={{ overflowY: "auto", height: "100vh" }}>
+      <PartnerCEO onBack={() => setShowPartnerPage(false)} />
+    </div>
+  );
+}
 return(
 
 <div className="app">
@@ -88,6 +99,13 @@ History
 Agents
 </div>
 
+<div
+  className="menuItem"
+  onClick={() => setShowPartnerPage(true)}
+>
+  <FaUsers />
+  Our Partner CEOs
+</div>
 
 <div className="menuItem">
 <FaCog/>
@@ -139,7 +157,7 @@ Research Assistant
 
 
 <div className="avatar">
-AK
+KU
 </div>
 
 
@@ -205,6 +223,13 @@ Code Mode
 
 <div className="topActions">
 
+<button
+  className="partnerBtn"
+  onClick={() => setShowPartnerPage(true)}
+>
+  <FaUsers />
+  Our Partner CEOs
+</button>
 
 <button>
 <FaShare/>

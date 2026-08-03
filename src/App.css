@@ -20,13 +20,20 @@ body,
 }
 
 
-body{
+/* body{
 
   background:#000;
   color:white;
   overflow:hidden;
 
+} */
+ body{
+  background:#000;
+  color:white;
+  overflow-x:hidden;
+  overflow-y:auto;
 }
+
 
 
 
@@ -55,24 +62,16 @@ body{
 
 
 .sidebar{
-
   width:270px;
   height:100vh;
-
   background:#0b0b0b;
-
   border-right:1px solid #262626;
-
   padding:18px 14px;
-
   display:flex;
-
   flex-direction:column;
-
+  overflow-y:auto;
+  overflow-x:hidden;
 }
-
-
-
 
 .brand{
 
@@ -225,15 +224,12 @@ body{
 
 
 .recent{
-
   margin-top:30px;
-
   flex:1;
-
-  overflow:hidden;
-
+  overflow-y:auto;
+  overflow-x:hidden;
+  min-height:0;
 }
-
 
 
 .recent h4{
@@ -370,17 +366,12 @@ body{
 
 
 .chatContainer{
-
   flex:1;
-
   height:100vh;
-
   display:flex;
-
   flex-direction:column;
-
   background:#000;
-
+  overflow:hidden;
 }
 
 
@@ -482,13 +473,14 @@ body{
   color:white;
 
   display:flex;
-
+  
   align-items:center;
 
   gap:8px;
 
   cursor:pointer;
-
+  white-space: nowrap;
+  min-width: fit-content;
 }
 
 
@@ -985,4 +977,51 @@ body{
   }
 
 
+}
+.topActions{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.partnerBtn{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  min-width: fit-content;
+  padding: 0 18px;
+}
+
+.partnerBtn{
+  transition: all .3s ease;
+}
+
+.partnerBtn:hover{
+  transform: translateY(-2px);
+}
+.menuItem{
+  cursor:pointer;
+}
+.ctaButton{
+  margin-bottom:40px;
+}
+
+.backBtn{
+  margin-bottom:40px;
+}
+
+.partnerPage{
+  animation: fadeIn .5s ease;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
 }

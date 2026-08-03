@@ -5,8 +5,8 @@ function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <div className="logoIcon">N</div>
-        <h2>NovaMind</h2>
+        <div className="logoIcon">K</div>
+        <h2>Klaiv AI</h2>
       </div>
 
       <div className="searchBox">
@@ -16,7 +16,7 @@ function Header() {
 
       <div className="rightMenu">
         <FiBell className="icon" />
-        <div className="avatar">A</div>
+        <div className="avatar">U</div>
       </div>
     </header>
   );
